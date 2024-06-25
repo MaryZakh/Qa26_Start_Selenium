@@ -40,11 +40,13 @@ public class HomeWork {
 
         WebElement el12 = wd.findElement(By.tagName("button"));
         WebElement el13 = wd.findElement(By.cssSelector("button"));
+        WebElement el29=wd.findElement(By.xpath("//button"));
 
 
         //by class
         WebElement el14 = wd.findElement(By.className("container"));
         WebElement el15 = wd.findElement(By.cssSelector(".container"));
+        WebElement el30=wd.findElement(By.xpath("//*[@class='container']"));
 
         WebElement el16 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
         WebElement el17 = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
@@ -57,6 +59,7 @@ public class HomeWork {
 
         WebElement el20 = wd.findElement(By.id("root"));
         WebElement el21 = wd.findElement(By.cssSelector("#root"));
+        WebElement el31 = wd.findElement(By.xpath("//*[@id='root']"));
 
 
         //by attribute
@@ -66,9 +69,17 @@ public class HomeWork {
         WebElement el24 = wd.findElement(By.name("email"));
 
         WebElement el25 = wd.findElement(By.cssSelector("[placeholder='Email']"));
+        WebElement el32 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+
+
         WebElement el26 = wd.findElement(By.cssSelector("[placeholder^='Em']"));
+        WebElement el33 = wd.findElement(By.xpath("//*[starts-with(@placeholder,'Em')]"));
+
         WebElement el27 = wd.findElement(By.cssSelector("[placeholder$='il']"));
+        WebElement el35 = wd.findElement(By.xpath("//*[contains(@placeholder,'il')]"));
+
         WebElement el28 = wd.findElement(By.cssSelector("[placeholder*='ma']"));
+        WebElement el34 = wd.findElement(By.xpath("//*[contains(@placeholder,'ma')]"));
 
 
 
