@@ -3,6 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,6 +18,17 @@ public class Index {
         wd = new ChromeDriver();
         wd.get("file:///C:/Users/marii/Downloads/qa/21.index.html");
     }
+
+    @Test
+    public void tableTest(){
+        //Canada
+
+        WebElement canada = wd.findElement(By.cssSelector("tr:nth-child(3) td:last-child"));
+        Assert.assertEquals(canada.getText(),"Canada");
+    }
+
+
+
 
 
     @Test
